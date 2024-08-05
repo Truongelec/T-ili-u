@@ -327,11 +327,11 @@ file_hoặc_thư_mục: Đường dẫn đến file hoặc thư mục cần thay
         tar [tuỳ chọn] [tên_kho_lưu_trữ] [file_hoặc_thư_mục]
 - Các tùy chọn thường dùng:
 > c: Tạo một kho lưu trữ mới.
-    x: Giải nén một kho lưu trữ.
-    v: Hiển thị chi tiết quá trình nén/giải nén.
-    f: Chỉ định tên file của kho lưu trữ.
-    z: Sử dụng gzip để nén.
-    j: Sử dụng bzip2 để nén
+>  x: Giải nén một kho lưu trữ.
+>   v: Hiển thị chi tiết quá trình nén/giải nén.
+>   f: Chỉ định tên file của kho lưu trữ.
+>   z: Sử dụng gzip để nén.
+>   j: Sử dụng bzip2 để nén
 
 Ví dụ:
     
