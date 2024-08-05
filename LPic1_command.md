@@ -427,22 +427,22 @@ VD:
 
 Trong lệnh top, các trạng thái của tiến trình được biểu diễn bằng các chữ cái:
 
-   > R: Running (đang chạy)
-    S: Sleeping (đang ngủ, có thể đánh thức)
-    D: Uninterruptible sleep (đang ngủ, không thể đánh thức)
-    T: Stopped (dừng)
-    Z: Zombie (tiến trình kết thúc nhưng chưa được thu hồi)
+   - R: Running (đang chạy)
+   - S: Sleeping (đang ngủ, có thể đánh thức)
+   - D: Uninterruptible sleep (đang ngủ, không thể đánh thức)
+   - T: Stopped (dừng)
+   - Z: Zombie (tiến trình kết thúc nhưng chưa được thu hồi)
 
 Ngoài ra, còn có các thông số:
 
-> us: Thời gian CPU sử dụng bởi các tiến trình người dùng.
-    sy: Thời gian CPU sử dụng bởi hệ điều hành.
-    ni: Thời gian CPU sử dụng bởi các tiến trình có ưu tiên thấp.
-    id: Thời gian CPU nhàn rỗi.
-    wa: Thời gian chờ I/O.
-    hi: Thời gian sử dụng CPU bởi các tiến trình ảo hóa.
-    si: Thời gian sử dụng CPU bởi các tiến trình steal time (cho các hệ thống đa xử lý).
-    st: Thời gian CPU bị đánh cắp bởi các hypervisor.
+- us: Thời gian CPU sử dụng bởi các tiến trình người dùng.
+- sy: Thời gian CPU sử dụng bởi hệ điều hành.
+- ni: Thời gian CPU sử dụng bởi các tiến trình có ưu tiên thấp.
+- id: Thời gian CPU nhàn rỗi.
+- wa: Thời gian chờ I/O.
+- hi: Thời gian sử dụng CPU bởi các tiến trình ảo hóa.
+- si: Thời gian sử dụng CPU bởi các tiến trình steal time (cho các hệ thống đa xử lý).
+- st: Thời gian CPU bị đánh cắp bởi các hypervisor.
 
 Zombie Process
 
@@ -451,12 +451,12 @@ Zombie Process
 
 -   Lệnh free cung cấp thông tin về bộ nhớ hệ thống (RAM) của máy tính.
 
-> total: Tổng lượng RAM của hệ thống.
-    used: Lượng RAM đang được sử dụng bởi các tiến trình và hệ điều hành.
-    free: Lượng RAM trống không được sử dụng bởi bất kỳ tiến trình nào.
-    shared: Lượng RAM được chia sẻ giữa các tiến trình.
-    buff/cache: Lượng RAM đang được sử dụng làm bộ nhớ đệm để tăng tốc độ truy cập dữ liệu.
-    available: Lượng RAM thực sự có thể được sử dụng ngay lập tức mà không cần phải giải phóng bộ nhớ cache.
+ - total: Tổng lượng RAM của hệ thống. 
+ - used: Lượng RAM đang được sử dụng bởi các tiến trình và hệ điều hành.
+ - free: Lượng RAM trống không được sử dụng bởi bất kỳ tiến trình nào.
+ - shared: Lượng RAM được chia sẻ giữa các tiến trình.
+ - buff/cache: Lượng RAM đang được sử dụng làm bộ nhớ đệm để tăng tốc độ truy cập dữ liệu.
+ - available: Lượng RAM thực sự có thể được sử dụng ngay lập tức mà không cần phải giải phóng bộ nhớ cache.
 
 **Lưu ý**:
 
@@ -468,9 +468,9 @@ Zombie Process
 
 Lệnh df hiển thị thông tin về dung lượng đĩa (disk space) đã sử dụng trên các hệ thống file.
 
-   > Filesystem: Hệ thống file.
-    1K-blocks: Tổng số khối 1K trên hệ thống file.
-    Used: Số khối đã được sử dụng.
-    Available: Số khối trống có thể sử dụng.
-    Use%: Tỷ lệ phần trăm dung lượng đã sử dụng.
-    Mounted on: Điểm gắn kết của hệ thống file.
+   - Filesystem: Hệ thống file.
+   - 1K-blocks: Tổng số khối 1K trên hệ thống file.
+   - Used: Số khối đã được sử dụng.
+   - Available: Số khối trống có thể sử dụng.
+   - Use%: Tỷ lệ phần trăm dung lượng đã sử dụng.
+   - Mounted on: Điểm gắn kết của hệ thống file.
