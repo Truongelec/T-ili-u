@@ -221,9 +221,10 @@ vd 3: **sort theo column**
     - -i: Bỏ qua sự khác biệt về chữ hoa và chữ thường.
     - -f N: Bỏ qua N trường đầu tiên khi so sánh các dòng.
     - -s N: Bỏ qua N ký tự đầu tiên của mỗi dòng khi so sánh.
- **lọc ra các dòng lặp lại trong một file**
 
-    uniq input.txt
+  **lọc ra các dòng lặp lại trong một file**
+
+      uniq input.txt
    
 # wc command
 - Cú pháp:
