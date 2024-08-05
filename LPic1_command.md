@@ -157,22 +157,23 @@
             12  142.250.186.142  20 ms  19 ms  18 ms
 ## netstat command
 **Hiển thị các loại kết nối:**
-    -t: Hiển thị các kết nối TCP.
-    -u: Hiển thị các kết nối UDP.
-    -a: Hiển thị tất cả các kết nối, bao gồm cả các kết nối đang lắng nghe (listening).
-    -n: Hiển thị địa chỉ IP và số cổng dưới dạng số thay vì tên dịch vụ.
+ 
+- -t: Hiển thị các kết nối TCP.
+- -u: Hiển thị các kết nối UDP.
+- -a: Hiển thị tất cả các kết nối, bao gồm cả các kết nối đang lắng nghe (listening).
+- -n: Hiển thị địa chỉ IP và số cổng dưới dạng số thay vì tên dịch vụ.
     
 **Hiển thị thông tin bổ sung:**
-    -p: Hiển thị PID và tên chương trình đang sử dụng socket.
-    -r: Hiển thị bảng định tuyến IP.
-    -s: Hiển thị thống kê về các giao thức mạng (TCP, UDP, ICMP).
-    -e: Hiển thị các thống kê mạng mở rộng (chỉ có trong Windows).
-    -o: Hiển thị ID của tiến trình sở hữu mỗi kết nối (chỉ có trong Windows).
+   - -p: Hiển thị PID và tên chương trình đang sử dụng socket.
+   - -r: Hiển thị bảng định tuyến IP.
+   - -s: Hiển thị thống kê về các giao thức mạng (TCP, UDP, ICMP).
+   - -e: Hiển thị các thống kê mạng mở rộng (chỉ có trong Windows).
+   - -o: Hiển thị ID của tiến trình sở hữu mỗi kết nối (chỉ có trong Windows).
 
 **Các tùy chọn khác:**
-    -l: Hiển thị các socket đang lắng nghe (listening).
-    -i: Hiển thị thống kê giao diện mạng.
-    -z: Hiển thị các kết nối TCP trong trạng thái TIME_WAIT.
+   - -l: Hiển thị các socket đang lắng nghe (listening).
+   - -i: Hiển thị thống kê giao diện mạng.
+   - -z: Hiển thị các kết nối TCP trong trạng thái TIME_WAIT.
 
 Ví dụ:
     - Hiển thị tất cả các kết nối TCP và UDP: **netstat -tu**
@@ -182,9 +183,9 @@ Ví dụ:
     - Hiển thị thống kê về giao thức TCP: **netstat -s tcp**
 
 **Một số lệnh kết hợp thường dùng:**
-Kiểm tra các dịch vụ đang chạy: **netstat -tulnp**
-    Xác định tiến trình đang sử dụng một cổng: **netstat -tunlp | grep :80 (để tìm tiến trình sử dụng cổng 80)**
-  Kiểm tra các kết nối đến từ một máy khác: **netstat -tunlp | grep 192.168.1.100 (để tìm các kết nối đến từ 192.168.1.100)**
+- Kiểm tra các dịch vụ đang chạy: **netstat -tulnp**
+- Xác định tiến trình đang sử dụng một cổng: **netstat -tunlp | grep :80 (để tìm tiến trình sử dụng cổng 80)**
+- Kiểm tra các kết nối đến từ một máy khác: **netstat -tunlp | grep 192.168.1.100 (để tìm các kết nối đến từ 192.168.1.100)**
 
 # sort command
 - Cú pháp:
@@ -211,9 +212,19 @@ vd 3: **sort theo column**
     sort -t 'ký_tự_phân_cách' -k cột_cần_sắp_xếp [tệp_vào] > [tệp_ra]
 
 # uniq command
-1. **lọc ra các dòng lặp lại trong một file**
+- Lệnh uniq là một công cụ dòng lệnh trong Linux được sử dụng để loại bỏ các dòng lặp lại liền kề trong một tệp văn bản. Nói cách khác, uniq sẽ tìm và xóa các dòng giống hệt nhau liên tiếp nhau trong một file.
+- Các tùy chọn thường dùng:
 
-2. **lọc ra các dòng lặp lại trong file và đếm số lượng các dòng lặp lại**
+    - -c: Đếm số lần xuất hiện của mỗi dòng duy nhất.
+    - -d: Chỉ in các dòng lặp lại.
+    - -u: Chỉ in các dòng duy nhất (không lặp lại).
+    - -i: Bỏ qua sự khác biệt về chữ hoa và chữ thường.
+    - -f N: Bỏ qua N trường đầu tiên khi so sánh các dòng.
+    - -s N: Bỏ qua N ký tự đầu tiên của mỗi dòng khi so sánh.
+ **lọc ra các dòng lặp lại trong một file**
+
+    uniq input.txt
+   
 # wc command
 - Cú pháp:
     
