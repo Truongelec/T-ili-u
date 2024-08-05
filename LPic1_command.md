@@ -211,7 +211,7 @@ vd 3: **sort theo column**
 
     sort -t 'ký_tự_phân_cách' -k cột_cần_sắp_xếp [tệp_vào] > [tệp_ra]
 
-# uniq command
+## uniq command
 - Lệnh uniq là một công cụ dòng lệnh trong Linux được sử dụng để loại bỏ các dòng lặp lại liền kề trong một tệp văn bản. Nói cách khác, uniq sẽ tìm và xóa các dòng giống hệt nhau liên tiếp nhau trong một file.
 - Các tùy chọn thường dùng:
 
@@ -226,7 +226,7 @@ vd 3: **sort theo column**
 
       uniq input.txt
    
-# wc command
+## wc command
 - Cú pháp:
     
          wc [Tùy chọn] [Tệp]
@@ -245,7 +245,7 @@ vd 2: **Đếm số kí tự trong file**
         
             wc -m myfile.txt
 
- # **Phân quyền**
+ ## **Phân quyền**
  - Trong Linux, có ba chủ thể chính liên quan đến phân quyền:
     - Chủ sở hữu (Owner): Người tạo ra tệp hoặc thư mục.
     - Nhóm (Group): Một nhóm người dùng có quyền truy cập đặc biệt.
