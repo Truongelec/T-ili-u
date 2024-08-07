@@ -9,13 +9,19 @@ Các cách chứng thực SSL:
 
 ### Các loại SSL phổ biến:
 
-**-DV - Domain Validated** - Xác thực tên Domain và Website được mã hóa an toàn khi trao đổi dữ liệu
-**-OV - Organization Validation** - Xác thực tổ chức / doanh nghiệp đang sở hữu website đó
-**-EV- Extend Validation** - SSL có độ bảo mật cao nhất
-**-Wildcard SSL** - Bảo mật tên miền chính và tất cả tên miền phụ của nó
+**- DV - Domain Validated** - Xác thực tên Domain và Website được mã hóa an toàn khi trao đổi dữ liệu
+
+**- OV - Organization Validation** - Xác thực tổ chức / doanh nghiệp đang sở hữu website đó
+
+**- EV- Extend Validation** - SSL có độ bảo mật cao nhất
+
+**- Wildcard SSL** - Bảo mật tên miền chính và tất cả tên miền phụ của nó
+
 ví dụ: example.com → mail.example.com → abc.example.com
-**-SANs SSL** - cho phép bảo vệ nhiều tên miền bằng một chứng chỉ
-**-SNI SSL** - cho phép nhiều website chia sẻ một địa chỉ IP- thường sử dụng chung với SANs SSL
+
+**- SANs SSL** - cho phép bảo vệ nhiều tên miền bằng một chứng chỉ
+
+**- SNI SSL** - cho phép nhiều website chia sẻ một địa chỉ IP- thường sử dụng chung với SANs SSL
 
 ### Các loại file trong SSL
 **1. CSR**
