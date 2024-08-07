@@ -9,32 +9,39 @@ Các cách chứng thực SSL:
 
 ### Các loại SSL phổ biến:
 
-**- DV - Domain Validated** - Xác thực tên Domain và Website được mã hóa an toàn khi trao đổi dữ liệu
-**- OV - Organization Validation** - Xác thực tổ chức / doanh nghiệp đang sở hữu website đó
-**- EV- Extend Validation** - SSL có độ bảo mật cao nhất
-**- Wildcard SSL** - Bảo mật tên miền chính và tất cả tên miền phụ của nó
+**-DV - Domain Validated** - Xác thực tên Domain và Website được mã hóa an toàn khi trao đổi dữ liệu
+**-OV - Organization Validation** - Xác thực tổ chức / doanh nghiệp đang sở hữu website đó
+**-EV- Extend Validation** - SSL có độ bảo mật cao nhất
+**-Wildcard SSL** - Bảo mật tên miền chính và tất cả tên miền phụ của nó
 ví dụ: example.com → mail.example.com → abc.example.com
-**SANs SSL** - cho phép bảo vệ nhiều tên miền bằng một chứng chỉ
-**SNI SSL** - cho phép nhiều website chia sẻ một địa chỉ IP- thường sử dụng chung với SANs SSL
+**-SANs SSL** - cho phép bảo vệ nhiều tên miền bằng một chứng chỉ
+**-SNI SSL** - cho phép nhiều website chia sẻ một địa chỉ IP- thường sử dụng chung với SANs SSL
 
 ### Các loại file trong SSL
 **1. CSR**
 - file chứa thông tin về yêu cầu cấp chứng chỉ SSL gồm thông tin như tên miền, tổ chức, quốc qua, public key,….
+
 **2. CRT**
 - file chứa chứng chỉ SSL đã được cấp, chứa thông tin về chủ sở hữu, pulic key và các thông tin liên quan chứng chỉ.
+
 **3.Private key**
 -  file chứa khóa riêng tương ứng với khóa công khai trong chứng chỉ.
 - Phải bảo mật tuyệt đối vì sẽ bị giả mạo website nêu bị lộ.
+
 **4. Bundle**
 - file chứa cả chứng chỉ chính, Intermediate và private key
 - đơn giản hóa quá trình cài đặt chứng chỉ, đặc biệtt khi cần cài đặt chứng chỉ trung gian
+
 **5. Intermediate**
 - Đây là một chứng chỉ trung gian được sử dụng để tạo chuỗi chứng nhận. Nó xác nhận rằng chứng chỉ SSL của bạn đã được cấp bởi một cơ quan cấp chứng chỉ đáng tin cậy
 -  giúp trình duyệt xác minh tính hợp lệ của chứng chỉ SSL
+
 **6. PEM **
 - Định dạng văn bản phổ biến nhất cho chứng chỉ SSL, CSR và khóa riêng.
+
 **7. DER** 
 - Định dạng nhị phân, thường được sử dụng để lưu trữ chứng chỉ.
+
 **8. PKCS**
 - Định dạng chứa cả chứng chỉ, khóa riêng và thông tin bổ sung, thường được sử dụng để xuất khẩu chứng chỉ từ các công cụ quản lý.
 
