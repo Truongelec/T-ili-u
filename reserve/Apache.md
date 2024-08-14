@@ -2,7 +2,7 @@
 # **Apache**
 
 # 1. Cài đặt môi trường	
-*emphasized text*## a. Cài đặt 
+## a. Cài đặt 
 
 		sudo apt install apache2 php libapache2-mod-php mysql-server php-mysql
 
@@ -23,7 +23,7 @@
 	
 		sudo chown -R www-data:www-data /var/www/html/wordpress
 		sudo chmod -R 755 /var/www/html/wordpress
-##	2.3 Tạo Database
+## 2.3 Tạo Database
 
 		sudo mysql -u root -p
 
