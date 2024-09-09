@@ -1,0 +1,10 @@
+##Chặn quốc tế
+-> Thêm vào modul trong file htaccess 
+
+    <Ifmodule mod_geoip.c>
+    GeoIPEnable on
+    SetEnvIf GEOIP_country_code VN AllowCountry
+    deny from all
+    allow from env=AllowCountry  
+    </Ifmodule>
+-> sau đó chặn trên bot
